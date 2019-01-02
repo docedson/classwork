@@ -78,6 +78,22 @@ namespace Lessons
             Console.WriteLine(multiplyVal);
             Console.WriteLine(divisionVal);
             Console.WriteLine(modulusVal);
+
+        }
+
+        public void CheckOperators()
+        {
+            int test = 100, test2 = 100;
+
+            int testVal = checked(test * test2);
+            checked
+            {
+                // make the value 300000000 to fail
+                int testAgain = test * 300;
+                Console.WriteLine(testAgain);
+            }
+            Console.WriteLine(testVal);
+
         }
     }
 }
