@@ -95,5 +95,22 @@ namespace Lessons
             Console.WriteLine(testVal);
 
         }
+
+        public void IncrementDecrement()
+        {
+            int myValue = 13, myOther = 10;
+            //myValue = myValue + 1
+            myValue++;
+            Console.WriteLine(myValue);
+            // myOther = myOther -1;
+            myOther--;
+            Console.WriteLine(myOther);
+            --myValue;
+            Console.WriteLine(myValue);
+            ++myOther;
+            Console.WriteLine(myOther);
+        }
+
+
     }
 }
