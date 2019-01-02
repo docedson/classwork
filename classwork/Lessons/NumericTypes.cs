@@ -105,12 +105,44 @@ namespace Lessons
             // myOther = myOther -1;
             myOther--;
             Console.WriteLine(myOther);
+
             --myValue;
             Console.WriteLine(myValue);
+
             ++myOther;
             Console.WriteLine(myOther);
         }
 
+        public void SpecialValues()
+        {
+            Console.WriteLine(2.0 / 0.0);
+            Console.WriteLine(-2.0 / 0.0);
+            Console.WriteLine(2.0 / -0.0);
+            Console.WriteLine(-2.0 / 0.0);
+            Console.WriteLine(0.0 / 0.0);
+            Console.WriteLine((2.0 / -0.0) - (2.0 / 0.0));
+            Console.WriteLine(0.0 / -0.0 == double.NaN);
+            Console.WriteLine(double.IsNaN(0.0 / 0.0));
+            Console.WriteLine(object.Equals(0.0 / 0.0, double.NaN));
+        }
+
+        public void ComparisonOperators()
+        {
+            bool isCool = true;  // declaration of a bool value
+
+            //bool values can be true or false. No cast type for bool to numberic types
+            int x = 3, y = 5, z = 3;
+            Console.WriteLine(x == y);
+            Console.WriteLine(x != y);
+            Console.WriteLine(x == z);
+        }
+
+        public void OtherOperators()
+        {
+            int val1 = 5, val2 = 10;
+            // val1 = val1 + val2
+            Console.WriteLine(val1 += val2);
+        }
 
     }
 }

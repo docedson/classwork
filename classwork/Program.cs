@@ -14,7 +14,8 @@ namespace classwork
             // Console is a class, WriteLine is a method with a parameter
             //Console.WriteLine("Hello World!");
             //MyHouseResults();
-            MyNumericExamples();
+            //MyNumericExamples();
+            OtherNumericExamples();
         }
 
         static void MyNumericExamples()
@@ -29,6 +30,15 @@ namespace classwork
             myTypes.BasicMath();
             myTypes.CheckOperators();
             myTypes.IncrementDecrement();
+            myTypes.SpecialValues();
+            myTypes.ComparisonOperators();
+
+        }
+
+        static void OtherNumericExamples()
+        {
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.OtherOperators();
         }
 
         static void MyHouseResults()
