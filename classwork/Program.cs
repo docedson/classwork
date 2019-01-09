@@ -17,7 +17,24 @@ namespace classwork
             //MyNumericExamples();
             //OtherNumericExamples();
             //MyStringExamples();
-            StatementSamples();
+            //StatementSamples();
+            //HouseSample();
+            StructureSample();
+        }
+
+        static void StructureSample()
+        {
+            BookSample bookSample = new BookSample(4.99m, "Zombie Fallout", "Mark Tufo");
+
+            Console.WriteLine("The book '" + bookSample.title + "' by " + bookSample.author + " is $" + bookSample.price);
+        }
+
+        static void HouseSample()
+        {
+            House myHouse = new House("Concrete", "triple pane");
+            Console.WriteLine(myHouse.PaintDoor);
+            Console.WriteLine(myHouse.Foundation);
+            myHouse.OpenDoor(true);
         }
 
         static void StatementSamples()
@@ -36,7 +53,8 @@ namespace classwork
             //se.SampleForEach();
             //string myString = se.JumpStatementExample("Sunday");
             //Console.WriteLine(myString);
-            BottlesSong();
+            //BottlesSong();
+            se.SampleDays(DaysOfWeek.Wed);
         }
 
         static void BottlesSong()

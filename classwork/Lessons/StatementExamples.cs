@@ -159,6 +159,25 @@ namespace Lessons
             }
         }
 
+        public void SampleDays(DaysOfWeek days)
+        {
+            switch (days)
+            {
+                case DaysOfWeek.Fri:
+                case DaysOfWeek.Sat:
+                case DaysOfWeek.Sun:
+                    Console.WriteLine("The Weekend is Here.");
+                    break;
+                case DaysOfWeek.Mon:
+                case DaysOfWeek.Tue:
+                case DaysOfWeek.Wed:
+                case DaysOfWeek.Thur:
+                    Console.WriteLine("Still at work");
+                    break;
+            }
+        }
+        
+
         
 
 
