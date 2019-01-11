@@ -1,5 +1,7 @@
 ﻿using System;
 using Lessons;
+using Quiz;
+
 /*This namespace represents the file folder that
 the class is in. */
 namespace classwork
@@ -19,8 +21,17 @@ namespace classwork
             //MyStringExamples();
             //StatementSamples();
             //HouseSample();
-            StructureSample();
+            //StructureSample();
+            QuizGrades();
         }
+
+        static void QuizGrades()
+        {
+            QuizClass1 myGrades = new QuizClass1();
+            Console.WriteLine(myGrades.GradeList("A"));
+        }
+
+
 
         static void StructureSample()
         {
@@ -54,7 +65,7 @@ namespace classwork
             //string myString = se.JumpStatementExample("Sunday");
             //Console.WriteLine(myString);
             //BottlesSong();
-            se.SampleDays(DaysOfWeek.Wed);
+            //se.SampleDays(DaysOfWeek.Wed);            
         }
 
         static void BottlesSong()
