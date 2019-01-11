@@ -22,8 +22,11 @@ namespace classwork
             //StatementSamples();
             //HouseSample();
             //StructureSample();
-            QuizGrades();
+            //QuizGrades();
+            //QuizNumbers();
         }
+
+
 
         static void QuizGrades()
         {
