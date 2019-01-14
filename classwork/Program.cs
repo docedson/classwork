@@ -22,16 +22,15 @@ namespace classwork
             //StatementSamples();
             //HouseSample();
             //StructureSample();
-            //QuizGrades();
-            //QuizNumbers();
+            QuizGrades();
         }
-
-
 
         static void QuizGrades()
         {
-            QuizClass1 myGrades = new QuizClass1();
-            Console.WriteLine(myGrades.GradeList("A"));
+            QuizClass1 se = new QuizClass1();
+            Console.WriteLine(se.GradeList("A"));
+
+            se.QuizNums();
         }
 
 
