@@ -22,8 +22,19 @@ namespace classwork
             //StatementSamples();
             //HouseSample();
             //StructureSample();
-            QuizGrades();
+            //QuizGrades();
+            FruitSample();
+
         }
+
+        static void FruitSample()
+        {
+            Apple myApple = new Apple();
+            myApple.EatFruit();
+
+            Fruit myFruit = new Fruit();
+        }
+
 
         static void QuizGrades()
         {
@@ -123,9 +134,9 @@ namespace classwork
             // This sets the value of Red to the object
             myHouse.PaintDoor = "Red";
             myHouse.CloseDoor(); // the door closes
-            // This gets the value of Red from the object
+                                 // This gets the value of Red from the object
             Console.WriteLine(myHouse.PaintDoor); // red
-            // This is a second object instance of House.
+                                                  // This is a second object instance of House.
             House mySecondHouse = new House();
             mySecondHouse.PaintDoor = "green";
             Console.WriteLine(mySecondHouse.PaintDoor); // green
