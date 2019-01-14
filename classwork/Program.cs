@@ -23,7 +23,6 @@ namespace classwork
             //StructureSample();
             //QuizGrades();
             FruitSample();
-
         }
 
         static void FruitSample()
@@ -36,6 +35,10 @@ namespace classwork
 
             Orange myOrange = new Orange();
             myOrange.EatFruit();
+
+            RanchStyle ranch = new RanchStyle("Stone", "Triple Pane", "Composite", "Blue");
+            ranch.OpenDoor();
+            Console.WriteLine(ranch.Roof);
         }
 
         static void QuizGrades()
