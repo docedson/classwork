@@ -34,23 +34,18 @@ namespace classwork
             }
         }
 
-        // Short handhand property + field; Auto Property
+        // Shorthand property + field; Auto Property
         public string Roof { get; set; }
 
         public string PaintDoor { get; set; }
 
-        public House()
+        public House() { }
+
+        public House(string foundation, string window)//This will run the ": this" statement below first
+        : this(foundation, window, "Shingles", "Green")
         { }
-
-        public House(string foundation, string window)
-        {
-            this._foundation = foundation;
-            this._window = window;
-            Roof = "shingles";
-            PaintDoor = "Green";
-        }
-
-        public House(string foundation, string window, string roof, string doorPaint)
+        //anything in the above brackets would run third in this area
+        public House(string foundation, string window, string roof, string doorPaint) //This will run second after the above ": this"
         {
             this._foundation = foundation;
             this._window = window;

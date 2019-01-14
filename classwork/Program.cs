@@ -2,8 +2,7 @@
 using Lessons;
 using Quiz;
 
-/*This namespace represents the file folder that
-the class is in. */
+//This namespace represents the file folder that the class is in.
 namespace classwork
 {
     // Class is a blueprint of an object.
@@ -32,9 +31,12 @@ namespace classwork
             Apple myApple = new Apple();
             myApple.EatFruit();
 
-            Fruit myFruit = new Fruit();
-        }
+            Fruit myFruit = new Apple();
+            myFruit.EatFruit();
 
+            Orange myOrange = new Orange();
+            myOrange.EatFruit();
+        }
 
         static void QuizGrades()
         {

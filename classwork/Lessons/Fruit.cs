@@ -3,7 +3,7 @@ namespace Lessons
 {
     public class Fruit
     {
-        public void EatFruit()
+        public virtual void EatFruit()
         {
             Console.WriteLine("I eat fruit");
         }
