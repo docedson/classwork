@@ -24,8 +24,33 @@ namespace classwork
             //QuizGrades();
             //FruitSample();
             //ParamSample();
-            ModifierExamples();
+            //ModifierExamples();
+            //Lesson12();
+            AbstractDemo();
         }
+
+        static void AbstractDemo()
+        {
+            TRex trex = new TRex();
+            Triceratops triceratops = new Triceratops();
+
+            trex.EatFood();
+            trex.Move();
+            trex.SkinType();
+
+            triceratops.EatFood();
+            triceratops.Move();
+            triceratops.Teeth();
+        }
+
+        static void Lesson12()
+        {
+            double temp = Utilities.CelsiusToFahrenheit("43.2");
+            double temp2 = Utilities.FahrenheitToCelsius("109.76");
+            Console.WriteLine(temp);
+            Console.WriteLine(temp2);
+        }
+
 
         static void ModifierExamples()
         {
