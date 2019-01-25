@@ -8,8 +8,7 @@ namespace classwork
     // Class is a blueprint of an object.
     class Program
     {
-        /*static is only one, void is a return type
-        Main is the method name, string[] is an array and a parameter */
+        /*static is only one, void is a return type, Main is the method name, string[] is an array and a parameter */
         static void Main(string[] args)
         {
             // Console is a class, WriteLine is a method with a parameter
@@ -26,7 +25,44 @@ namespace classwork
             //ParamSample();
             //ModifierExamples();
             //Lesson12();
-            AbstractDemo();
+            //AbstractDemo();
+            //DeconstructSample();
+            //FinalizerSample();
+            //IndexerSample();
+            PartialSample();
+        }
+
+        static void PartialSample()
+        {
+            Pear pear = new Pear("yellow");
+        }
+
+        static void IndexerSample()
+        {
+            IndexerExample indexExample = new IndexerExample();
+            indexExample[2] = 250;
+
+            for (int i = 0; i < indexExample.Length; i++)
+            {
+                Console.WriteLine("Value {0} = {1}", i, indexExample[i]);
+            }
+        }
+
+        static void FinalizerSample()
+        {
+            FinalizerExample finalExample = new FinalizerExample("John", "Doe");
+        }
+
+        static void DeconstructSample()
+        {
+            string first = "Tom", last = "Jones";
+
+            Lesson13 lesson13 = new Lesson13("John", "Doe");
+            Console.WriteLine("First name = {0}, and last name = {1}", first, last);
+
+            lesson13.Deconstruct(out first, out last);
+            Console.WriteLine("First name = {0}, and last name = {1}", first, last);
+
         }
 
         static void AbstractDemo()
@@ -105,8 +141,6 @@ namespace classwork
 
             se.QuizNums();
         }
-
-
 
         static void StructureSample()
         {

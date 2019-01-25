@@ -5,5 +5,7 @@ namespace Lessons
         void SkinType();
 
         void Teeth();
+
+        string Travel { get; set; }
     }
 }
