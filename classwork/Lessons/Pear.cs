@@ -7,8 +7,11 @@ namespace Lessons
         public Pear(string message)
         {
             Console.WriteLine(message);
+            Peel();
+            Color();
         }
 
         partial void Peel();
+        partial void Color();
     }
 }

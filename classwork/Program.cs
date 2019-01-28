@@ -11,7 +11,7 @@ namespace classwork
         /*static is only one, void is a return type, Main is the method name, string[] is an array and a parameter */
         static void Main(string[] args)
         {
-            // Console is a class, WriteLine is a method with a parameter
+            //Console is a class, WriteLine is a method with a parameter
             //Console.WriteLine("Hello World!");
             //MyHouseResults();
             //MyNumericExamples();
@@ -29,7 +29,43 @@ namespace classwork
             //DeconstructSample();
             //FinalizerSample();
             //IndexerSample();
-            PartialSample();
+            //PartialSample();
+            //AnotherHouseExample();
+            //GenericSample();
+            CollectionSample();
+        }
+
+        static void CollectionSample()
+        {
+            CollectionExamples ce = new CollectionExamples();
+            ce.MyArrayListExample();
+            ce.MyListExample();
+        }
+
+        static void GenericSample()
+        {
+            GenericList<int> myList = new GenericList<int>();
+            myList.Add(10);
+            Console.WriteLine(myList);
+
+            GenericList<string> mySecondList = new GenericList<string>();
+            mySecondList.Add("Happy");
+
+            GenericList<TRex> myTRexList = new GenericList<TRex>();
+            myTRexList.Add(new TRex());
+        }
+
+        static void AnotherHouseExample()
+        {
+            House myHouse = new House()
+            {
+                Roof = "Shingles",
+                Window = "Doulbe Pane",
+                PaintDoor = "Red",
+                Foundation = "Concrete"
+            };
+
+            Console.WriteLine("My window choice is {0}", myHouse.Window);
         }
 
         static void PartialSample()
