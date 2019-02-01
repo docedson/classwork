@@ -32,7 +32,17 @@ namespace classwork
             //PartialSample();
             //AnotherHouseExample();
             //GenericSample();
-            CollectionSample();
+            //CollectionSample();
+            ElectProb();
+            //FeetProblem();
+            //LeapYearCheck();
+        }
+
+        static void ElectProb()
+        {
+            LabResults myCurrency = new LabResults();
+            myCurrency.Current();
+            Console.WriteLine();
         }
 
         static void CollectionSample()
