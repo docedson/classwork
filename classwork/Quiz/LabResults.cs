@@ -7,20 +7,13 @@ namespace Quiz
         //Finding the current
         public void Current()
         {
-            double myVolt, myResist;
+            Console.WriteLine("What is the voltage? ", myVolt);
+            decimal myVolt = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("What is the resistance? ", myResist);
+            decimal myResist = decimal.Parse(Console.ReadLine());
 
-            Console.WriteLine("What is the voltage? ");
-            string type = Console.ReadLine();
-            myVolt = Convert.ToDouble(type);
-
-
-
-            Console.WriteLine("What is the resistance? ");
-            myResist = Convert.ToDouble(Console.ReadLine());
-
-            double Current = calcCurrent(myVolt, myResist);
-            Console.WriteLine(Current);
-            Console.ReadLine();
+            decimal myCurrent = (myVolt/myResist);
+            Console.WriteLine("Your current is {0}");            
         }
 
         public double calcCurrent(double myVolt, double myResist)
