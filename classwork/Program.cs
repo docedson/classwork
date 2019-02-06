@@ -33,17 +33,21 @@ namespace classwork
             //AnotherHouseExample();
             //GenericSample();
             //CollectionSample();
-            ElectProb();
-            //FeetProblem();
-            //LeapYearCheck();
+            LabResults();    
+            
         }
 
-        static void ElectProb()
+        static void LabResults()
         {
-            LabResults myCurrency = new LabResults();
-            myCurrency.Current();
-            Console.WriteLine();
+            LabResults myLab2 = new LabResults();
+            //myLab2.Problem1();
+            //myLab2.Problem2();
+            myLab2.Problem3();
+            //myLab2.Problem4();
+            //myLab2.Problem5();            
         }
+
+
 
         static void CollectionSample()
         {

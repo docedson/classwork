@@ -1,71 +1,79 @@
 using System;
+
 namespace Quiz
 
 {
     public class LabResults
     {
-        //Finding the current
-        public void Current()
+        /* public void Problem1()
         {
-            Console.WriteLine("What is the voltage? ", myVolt);
-            decimal myVolt = decimal.Parse(Console.ReadLine());
-            Console.WriteLine("What is the resistance? ", myResist);
-            decimal myResist = decimal.Parse(Console.ReadLine());
 
-            decimal myCurrent = (myVolt/myResist);
-            Console.WriteLine("Your current is {0}");            
+
+
         }
 
-        public double calcCurrent(double myVolt, double myResist)
+        public void Problem2()
         {
-            return myVolt / myResist;
+
+
+
+
+        }*/
+
+        public void Problem3()
+        {
+            LengthConversion myLengths = new LengthConversion();
+            double Feet = 0.0;
+            
+            
+            
+            Console.WriteLine("How many feet would you like to convert? Please enter an amount and press 'Enter'.");
+            Feet = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine("By the information you provided, the conversions are:");
+            //Console.WriteLine("Millimeters: {0}", Millimeter);
+            
+
+            Console.WriteLine("By using your input, the conversions are: {0}, {1}, {2}, {3}, {4}", Millimeter);
+
+
+
+
+
+
+
+
+
         }
 
-        //Finding the voltage
-        public void Voltage()
+        /*public void Problem4()
         {
-            double myCurrent, myResist;
 
-            Console.WriteLine("What is the currant? ");
-            myCurrent = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("What is the resistance? ");
-            myResist = Convert.ToDouble(Console.ReadLine());
 
-            double Voltage = LabResults.calcVoltage(myCurrent, myResist);
-            Console.WriteLine(Voltage);
-            Console.ReadLine();
+
+
+
+
+
+
+
         }
 
-        public static double calcVoltage(double myCurrent, double myResist)
+        public void Problem5()
         {
-            return myCurrent / myResist;
-        }
-
-        //Finding the resistance
-        public void Resist()
-        {
-            double myVolt, myCurrent;
-
-            Console.WriteLine("What is the voltage? ");
-            myVolt = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("What is the current? ");
-            myCurrent = Convert.ToDouble(Console.ReadLine());
-
-            double Resist = LabResults.calcResist(myVolt, myCurrent);
-            Console.WriteLine(Resist);
-            Console.ReadLine();
-        }
-
-        public static double calcResist(double myVolt, double myCurrent)
-        {
-            return myVolt / myCurrent;
-        }
 
 
 
-       
 
-    }
+
+
+
+
+        }*/
+
+
+
+
+    }       
 }
