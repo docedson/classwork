@@ -4,53 +4,39 @@ namespace Quiz
 {
     public class LengthConversion
     {
-        public enum Measurements {Millimeter, Centimeter, Inches, Meter, Yard}
+        public enum Measurements {Millimeters, Centimeters, Inches, Meters, Yards}
 
-        public void ConversionFeet(double Feet, Measurements LengthMath)
+        public void ConversionFeet(double Feet, Measurements feetConvert)
         {
-            double Millimeter = Math.Floor(Feet * 304.8);
-            double Centimeter = Math.Floor(Feet * 30.48);
-            double Inches = Math.Floor(Feet * 12);
-            double Meter = Math.Floor(Feet * 0.3048);
-            double Yard = Math.Floor(Feet * 0.33333333333);
-
-
-
-            /*switch (LengthMath)
+            switch(feetConvert)
             {
-                case Measurements.Millimeter:
-                double Solution = Math.Floor(Feet * 304.8);
-                Console.WriteLine(Solution + " " + Measurements.Millimeter);
+                case Measurements.Millimeters:
+                double total = Math.Floor(Feet * 304.8) / 100;
+                Console.WriteLine(total + " " + Measurements.Millimeters);
                 break;
 
-                case Measurements.Centimeter:
-                double Solution2 = Math.Floor(Feet * 30.48);
-                Console.WriteLine(Solution2 + " " + Measurements.Centimeter);
+                case Measurements.Centimeters:
+                double total1 = Math.Floor(Feet * 30.48) / 100;
+                Console.WriteLine(total1 + " " + Measurements.Centimeters);
                 break;
 
                 case Measurements.Inches:
-                double Solution3 = Math.Floor(Feet * 12);
-                Console.WriteLine(Solution3 + " " + Measurements.Inches);
+                double total2 = Math.Floor(Feet * 12) / 100;
+                Console.WriteLine(total2 + " " + Measurements.Inches);
                 break;
 
-                case Measurements.Meter:
-                double Solution4 = Math.Floor(Feet * 0.3048);
-                Console.WriteLine(Solution4 + " " + Measurements.Meter);
+                case Measurements.Meters:
+                double total3 = Math.Floor(Feet * 0.3048) / 100;
+                Console.WriteLine(total3 + " " + Measurements.Meters);
                 break;
 
-                case Measurements.Yard:
-                double Solution5 = Math.Floor(Feet * 0.33333333333);
-                Console.WriteLine(Solution5 + " " + Measurements.Yard);
+                case Measurements.Yards:
+                double total4 = Math.Floor(Feet * 0.33333333333) / 100;
+                Console.WriteLine(total4 + " " + Measurements.Yards);
                 break;
-                
 
-
-
-            }*/
+            }
         }
-
-
-
 
     }
 
