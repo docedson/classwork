@@ -10,57 +10,59 @@ namespace Quiz
         public void Problem1()
         {
             Console.WriteLine("What would you like to determine today? Please enter 'V' for voltage, 'C' for current, or 'R' for resistance. Then press 'Enter'");
-            string electAnswer = (Console.ReadLine());
+            string electAnswer = (Console.ReadLine().ToUpper());
+            
             if(electAnswer == "V")
             {
-                Console.WriteLine("Enter the resistance as a decimal number: ");
+                Console.WriteLine("Enter your resistance: ");
                 double R;
                 while(!double.TryParse(Console.ReadLine(), out R));
-                Console.WriteLine("Enter the amperage as a decimal number");
+                Console.WriteLine("Enter your amperage:");
                 double I;
                 while(!double.TryParse(Console.ReadLine(), out I));
                 double V = R * I;
-                Console.WriteLine("Voltage is:  " + V.ToString() + "volts.");                
+                Console.WriteLine("Your voltage is:  " + V.ToString("0.00"));                
             }
 
             else if(electAnswer == "I")
             {
-                Console.WriteLine("Enter the voltage as a decimal number: ");
+                Console.WriteLine("Enter your voltage: ");
                 double V;
                 while(!double.TryParse(Console.ReadLine(), out V));
-                Console.WriteLine("Enter the resistance as a decimal number:  ");
+                Console.WriteLine("Enter your resistance:  ");
                 double R;
                 while(!double.TryParse(Console.ReadLine(), out R));
                 double I = V/R;
-                Console.WriteLine("Your amperage is: " + I.ToString() + "amps");
+                Console.WriteLine("Your amperage is: " + I.ToString("0.00"));
             }
 
             else if(electAnswer == "R")
             {
-                Console.WriteLine("Enter the voltage as a decimal number: ");
+                Console.WriteLine("Enter your voltage: ");
                 double V;
                 while(!double.TryParse(Console.ReadLine(), out V));
                 double I;
+                Console.WriteLine("Enter your current: ");
                 while(!double.TryParse(Console.ReadLine(), out I));
                 double R = V/I;
-                Console.WriteLine("Resistance is: " + R.ToString() + "ohms");                
+                Console.WriteLine("Your resistance is: " + R.ToString("0.00"));                
             }
 
             else
             {
-                Console.WriteLine("You did not enter the correct letter. Please start over.");
+                Console.WriteLine("You did not enter a valid option. Please start over.");
             }
 
 
         }
 
-        /*/public void Problem2()
+        /*public void Problem2()
         {
 
 
 
 
-        }
+        }*/
 
         public void Problem3()
         {
