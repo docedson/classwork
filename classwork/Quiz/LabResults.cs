@@ -17,7 +17,7 @@ namespace Quiz
                 Console.WriteLine("Please enter your resistance and press 'Enter': ");
                 double R;
                 while(!double.TryParse(Console.ReadLine(), out R));
-                Console.WriteLine("Please enter your amperage and press 'Enter':");
+                Console.WriteLine("Please enter your current and press 'Enter':");
                 double I;
                 while(!double.TryParse(Console.ReadLine(), out I));
                 double V = R * I;
@@ -33,7 +33,7 @@ namespace Quiz
                 double R;
                 while(!double.TryParse(Console.ReadLine(), out R));
                 double I = V/R;
-                Console.WriteLine("Your amperage is: " + I.ToString("0.00"));
+                Console.WriteLine("Your current is: " + I.ToString("0.00"));
             }
 
             else if(electAnswer == "R")
@@ -66,23 +66,25 @@ namespace Quiz
 
         public void Problem3()
         {
-            double Feet;
+            double feet;
 
             Console.WriteLine("How many feet would you like to convert? Please enter a number and press 'Enter'");
-            Feet = double.Parse(Console.ReadLine());
-            Console.ReadLine();
+            feet = double.Parse(Console.ReadLine());
+            Console.WriteLine("");
 
+            Console.WriteLine(" " +feet + " feet is:");
+            
             LengthConversion myLengths = new LengthConversion();
-            myLengths.ConversionFeet(Feet, LengthConversion.Measurements.Millimeters);
-            myLengths.ConversionFeet(Feet, LengthConversion.Measurements.Centimeters);
-            myLengths.ConversionFeet(Feet, LengthConversion.Measurements.Inches);
-            myLengths.ConversionFeet(Feet, LengthConversion.Measurements.Meters);
-            myLengths.ConversionFeet(Feet, LengthConversion.Measurements.Yards);
+            myLengths.ConversionFeet(feet, LengthConversion.Measurements.Millimeters);
+            myLengths.ConversionFeet(feet, LengthConversion.Measurements.Centimeters);
+            myLengths.ConversionFeet(feet, LengthConversion.Measurements.Inches);
+            myLengths.ConversionFeet(feet, LengthConversion.Measurements.Meters);
+            myLengths.ConversionFeet(feet, LengthConversion.Measurements.Yards);
 
 
         }
 
-        public void Problem4()
+        /*public void Problem4()
         {
             //Leap years can be divided by 4 or 400 - EXCEPT if they can be divided by 100, then they're not            
             
