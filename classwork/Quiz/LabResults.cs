@@ -88,9 +88,10 @@ namespace Quiz
             
             Console.WriteLine("Please enter a 4 digit year to verify if it will be a Leap Year, and press 'Enter': ");
             int myYear = Convert.ToInt32(Console.ReadLine());
+            bool success = int.TryParse(n, out myYear); 
             
 
-            if (myYear >= 999 || myYear <= 9999)
+            if (myYear <= 999 || myYear >= 9999)
             Console.WriteLine("Your input is not a 4 digit year. Please start over.");
 
             else
