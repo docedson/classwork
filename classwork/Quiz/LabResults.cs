@@ -58,11 +58,22 @@ namespace Quiz
 
         /*public void Problem2()
         {
+            int port = 5;
+            HDTV myHD = new HDTV("$700.00", "65 In");
+            myHD.TurnOn();
+            myHD.Mountability(true);
+            Console.WriteLine("There are " + myHD.ports + " ports availabe on this device.");
+
+            FKTV myFK = new FKTV("1250.00", "75 In");
+            myFK.Mountability(true);
+            myFK.TurnOn();
+            myFK.SmartApp();
+            Console.WriteLine("There are " + myFK.ports + " ports availabe on this TV.");
 
 
 
 
-        }*/
+        }
 
         public void Problem3()
         {
@@ -82,28 +93,29 @@ namespace Quiz
             myLengths.ConversionFeet(feet, LengthConversion.Measurements.Yards);
 
 
-        }
+        }*/
 
-        /*public void Problem4()
+        public void Problem4()
         {
             //Leap years can be divided by 4 or 400 - EXCEPT if they can be divided by 100, then they're not            
             
             Console.WriteLine("Please enter a 4 digit year to verify if it will be a Leap Year, and press 'Enter': ");
             int myYear = Convert.ToInt32(Console.ReadLine());
-            bool success = int.TryParse(n, out myYear); 
-            
 
-            if (myYear <= 999 || myYear >= 9999)
-            Console.WriteLine("Your input is not a 4 digit year. Please start over.");
+            if (myYear < 1000 || myYear > 9999)
+            {
+                Console.WriteLine("Your input is not a 4 digit year. Please press 'Enter' and start over.");
+                return;
+            }
 
             else
             {
-                if ((myYear % 4 == 0) && (myYear % 400 == 0) || (myYear % 100 /= 0))
-                Console.WriteLine("Your chosen year is a Leap Year!");
-                
+                if ((myYear % 4 == 0) || (myYear % 100 == 0) || (myYear % 400 == 0))
+                        Console.WriteLine("Your chosen year is a Leap Year! Please press 'Enter' to continue.");
+
                 else
                 {
-                    Console.WriteLine("Your chosen year is not a Leap Year.");
+                    Console.WriteLine("Your chosen year is not a Leap Year. Please press 'Enter' to continue.");
                 }
 
             }
