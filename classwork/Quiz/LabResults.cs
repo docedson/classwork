@@ -56,23 +56,31 @@ namespace Quiz
 
         }
 
-        /*public void Problem2()
+        public void Problem2()
         {
-            int port = 5;
-            HDTV myHD = new HDTV("$700.00", "65 In");
-            myHD.TurnOn();
-            myHD.Mountability(true);
-            Console.WriteLine("There are " + myHD.ports + " ports availabe on this device.");
-
-            FKTV myFK = new FKTV("1250.00", "75 In");
-            myFK.Mountability(true);
-            myFK.TurnOn();
-            myFK.SmartApp();
-            Console.WriteLine("There are " + myFK.ports + " ports availabe on this TV.");
+            Console.WriteLine("Which TV are you considering? Please enter '1' for the HDTV, and '2' for the 4KTV. Then press 'Enter'");
+            int myTV = Convert.ToInt32(Console.ReadLine());
 
 
+            if ((myTV != 1) || (myTV != 2))
+            {
+                Console.WriteLine("You did not enter an option we offer at this time. Please start over.");
+            }
 
+            else
+            {
+                if (myTV == 1)
+                {
+                    Console.WriteLine("The size of your TV is " + Size + ", the price will be ", +price + ", the number of ports is " + ports + ", and this TV is " + mountable);
+                }
 
+                else if (myTV == 2)
+                {
+                    Console.WriteLine("The size of your TV is " + size + ", the price will be ", +price + ", the number of ports is " + ports + ", and this TV is " + mountable);
+                }
+
+            }
+            
         }
 
         public void Problem3()
@@ -93,7 +101,7 @@ namespace Quiz
             myLengths.ConversionFeet(feet, LengthConversion.Measurements.Yards);
 
 
-        }*/
+        }
 
         public void Problem4()
         {

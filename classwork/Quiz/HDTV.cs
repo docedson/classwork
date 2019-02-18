@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,23 +6,15 @@ namespace Quiz
 {
     public class HDTV : TVs
     {
-        public int ports = 7;
-        public HDTV(string size, string price) : base(size, price);
+        public HDTV(string size, string price, int ports, bool mountable) : base(size, price)
         {
-            Console.WriteLine("The price of the HDTV is " +size);
-            Console.WriteLine("The size available for the HDTV is " +price);
+            Console.WriteLine("The size of this HDTV is " + size +" and the price of this HDTV is " + price);
         }
 
-        public override void SmartApp()
+        public override void power()
         {
-            Console.WriteLine("Cannot use a smart app with this TV.");
+            Console.WriteLine("You will use the authorized Smart App to operate this TV.");
         }
-
-        public override void TurnON()
-        {
-            Console.WriteLine("Must use the provided remote to turn on the TV.");
-        }
-
 
     }
-}*/
+}

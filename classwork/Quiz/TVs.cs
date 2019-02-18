@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,28 +6,18 @@ namespace Quiz
 {
     public abstract class TVs
     {
-        public string Size { get; set; } = "50 Inch";
-        public string Price { get; set; }
-        public int Ports { get; set; } = 6;
-        public bool Mountable { get; set; }
+        public double size { get; set; }
+        public double price { get; set; }
+        public int ports { get; set; }
+        public bool mountable { get; set; }
+        public abstract void power();
 
-        public abstract void TurnOn();
-        public abstract void SmartApp();
-
-
-
-
-        public TVs(string size, string price) : this(price, size, true, 6)
-        {
-
-
-        }
 
         public TVs(string size, string price, bool mountable, int ports)
         {
             this.Price = price;
             this.Size = size;
-            this.IsMountable = mountable;
+            this.Mountable = mountable;
             this.Ports = ports;
         }
 
@@ -43,4 +33,4 @@ namespace Quiz
             }
         }
     }
-}*/
+}

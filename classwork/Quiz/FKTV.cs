@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,19 +8,13 @@ namespace Quiz
     {
         public FKTV(string size, string price) : base(size, price)
         {
-            Console.WriteLine("The price of the 4KTV is " + price);
-            Console.WriteLine("The size of the TV is " + size);
+            Console.WriteLine("The size of the 4KTV is " + size + " and the price of the 4KTV is " + price);            
         }
 
-        public override void SmartApp()
+        public override void power()
         {
-            Console.WriteLine("this 4KTV uses a smart app to turn on.");
-        }
-
-        public override void TurnOn()
-        {
-            Console.WriteLine("Must use Smart App in order to run on and use this TV.");
+            Console.WriteLine("You will use the authorized Smart App to operate this 4KTV.");
         }
 
     }
-}*/
+}
