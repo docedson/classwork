@@ -56,7 +56,7 @@ namespace Quiz
 
         }
 
-        public void Problem2()
+        /*public void Problem2()
         {
             Console.WriteLine("Which TV are you considering? Please enter '1' for the HDTV, and '2' for the 4KTV. Then press 'Enter'");
             int myTV = Convert.ToInt32(Console.ReadLine());
@@ -81,7 +81,7 @@ namespace Quiz
 
             }
             
-        }
+        }*/
 
         public void Problem3()
         {
@@ -138,10 +138,43 @@ namespace Quiz
 
 
 
-
+       
 
 
         }*/
+
+        public void Problem6()
+        {
+            double dogWeight;
+            double dogYear1, dogYear2, dogYear3;
+
+            Console.WriteLine("To figure out your dog's age compared to a human's age, please enter your dog's weight and press 'Enter' first.");
+            dogWeight = double.Parse(Console.ReadLine());
+            Console.WriteLine("");
+
+
+            if (dogWeight <= 20)
+            {
+                Console.WriteLine("Your dog is considered a 'small' dog. Now, please enter your dog's age by whole year.");
+                dogYear1 = double.Parse(Console.ReadLine());
+            }
+
+            else if (dogWeight >= 20 && dogWeight <= 50)
+            {
+                Console.WriteLine("Your dog is considered a 'medium' dog. Now, please enter your dog's age by whole year.");
+                dogYear2 = double.Parse(Console.ReadLine());
+            }
+
+            else if (dogWeight >= 50)
+            {
+                Console.WriteLine("Your dog is considered a 'large' dog. Now, please enter your dog's age by whole year.");
+                dogYear3 = double.Parse(Console.ReadLine());
+            }
+
+            Doggies myDogs = new Doggies();
+
+
+        }
 
 
 

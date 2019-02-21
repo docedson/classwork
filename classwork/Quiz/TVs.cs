@@ -1,6 +1,7 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Text;
+
 
 namespace Quiz
 {
@@ -15,10 +16,10 @@ namespace Quiz
 
         public TVs(string size, string price, bool mountable, int ports)
         {
-            this.Price = price;
-            this.Size = size;
-            this.Mountable = mountable;
-            this.Ports = ports;
+            this.price = price;
+            this.size = size;
+            this.mountable = mountable;
+            this.ports = ports;
         }
 
         public void Mountability(bool mountable)
@@ -33,4 +34,4 @@ namespace Quiz
             }
         }
     }
-}
+}*/
