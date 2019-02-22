@@ -58,24 +58,30 @@ namespace Quiz
 
         public void Problem2()
         {
+            int size;
+            int ports;
+            decimal price;
+            bool mountable;
+
             Console.WriteLine("Which TV are you considering? Please enter '1' for the HDTV, and '2' for the 4K TV. Then press 'Enter'");
             int myTV = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" ");
 
             if (myTV == 1)
             {
-                Console.WriteLine("You have chosen the HDTV model.");
+                Console.WriteLine("You have chosen the HDTV model. With this model, the specs are: ");
                 Console.WriteLine(" ");
-                Console.WriteLine("As the chosen model was the HDTV, your specs are: ");
-                //HDTV myHD = new HDTV();
+                
+                                
             }
 
             else if (myTV == 2)
             {
-                Console.WriteLine("You have chosen the 4KTV model.");
+                Console.WriteLine("You have chosen the 4KTV model. With this model, the specs are: ");
                 Console.WriteLine(" ");
-                Console.WriteLine("As the chosen model was the 4K TV, your specs are: ");
-            
+                
+
+
             }
 
             else
