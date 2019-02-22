@@ -1,37 +1,46 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
 
 namespace Quiz
 {
     public abstract class TVs
     {
-        public double size { get; set; }
-        public double price { get; set; }
-        public int ports { get; set; }
-        public bool mountable { get; set; }
-        public abstract void power();
+        int size;
+        int price;
+        int ports;
+        bool mountable;
 
-
-        public TVs(string size, string price, bool mountable, int ports)
+        public TVs(int size, int price)
         {
-            this.price = price;
             this.size = size;
-            this.mountable = mountable;
-            this.ports = ports;
+            this.price = price;
         }
 
-        public void Mountability(bool mountable)
+        public TVs(int size, int price, int ports, bool mountable)
         {
-            if (mountable)
-            {
-                Console.WriteLine("The TV is mountable.");
-            }
-            else
-            {
-                Console.WriteLine("The TV is not mountable.");
-            }
+            this.size = size;
+            this.price = price;
+            this.ports = ports;
+            this.mountable = mountable;
         }
+
+        public int GetSize()
+        {
+            return size;
+        }
+
+        public void SetSize(int size)
+        { 
+            this.size = size;
+        }
+            
+
+
     }
-}*/
+
+
+
+
+
+}

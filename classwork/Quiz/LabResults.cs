@@ -56,32 +56,34 @@ namespace Quiz
 
         }
 
-        /*public void Problem2()
+        public void Problem2()
         {
-            Console.WriteLine("Which TV are you considering? Please enter '1' for the HDTV, and '2' for the 4KTV. Then press 'Enter'");
+            Console.WriteLine("Which TV are you considering? Please enter '1' for the HDTV, and '2' for the 4K TV. Then press 'Enter'");
             int myTV = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" ");
 
-
-            if ((myTV != 1) || (myTV != 2))
+            if (myTV == 1)
             {
-                Console.WriteLine("You did not enter an option we offer at this time. Please start over.");
+                Console.WriteLine("You have chosen the HDTV model.");
+                Console.WriteLine(" ");
+                Console.WriteLine("As the chosen model was the HDTV, your specs are: ");
+                //HDTV myHD = new HDTV();
+            }
+
+            else if (myTV == 2)
+            {
+                Console.WriteLine("You have chosen the 4KTV model.");
+                Console.WriteLine(" ");
+                Console.WriteLine("As the chosen model was the 4K TV, your specs are: ");
+            
             }
 
             else
             {
-                if (myTV == 1)
-                {
-                    Console.WriteLine("The size of your TV is " + Size + ", the price will be ", +price + ", the number of ports is " + ports + ", and this TV is " + mountable);
-                }
-
-                else if (myTV == 2)
-                {
-                    Console.WriteLine("The size of your TV is " + size + ", the price will be ", +price + ", the number of ports is " + ports + ", and this TV is " + mountable);
-                }
-
+                Console.WriteLine("You did not enter a valid option. Please start over.");
             }
-            
-        }*/
+
+        }
 
         public void Problem3()
         {
