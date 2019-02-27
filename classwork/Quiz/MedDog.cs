@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Quiz
 {
-    public class Doggies
+    class MedDog
     {
     }
 }

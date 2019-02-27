@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,17 +6,17 @@ namespace Quiz
 {
     public class FKTV : TVs
     {
-        int size;
-        int ports;
-        decimal price;
-        bool mountable = true;
+        int Size;
+        int Ports;
+        decimal Price;
+        bool IsMountable = true;
 
-        public FKTV(int size, int price) : base(size, price)
+        public FKTV(int Size, int Price) : base(Size, Price)
         {
-            Console.WriteLine("The size is " + size, "inches. The number of ports is ", +ports, ". The price is $", +price, ". This TV is ", mountable, ". Your 4K TV will be operated by the authorized Smart App.");
+            Console.WriteLine("The size is " + Size, "inches. The number of ports is ", +Ports, ". The price is $", +Price, ". This TV is ", Mountable, ". Your 4K TV will be operated by the authorized Smart App.");
         }
 
 
 
     }
-}
+}*/

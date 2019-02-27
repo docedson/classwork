@@ -6,23 +6,19 @@ namespace Quiz
 {
     public abstract class TVs
     {
-        int size;
-        int ports;
-        decimal price;
-        bool mountable;
+        int Size { get; set; }
+        int Ports { get; set; } 
+        decimal Price { get; set; }
+        bool IsMountable { get; set; }
 
-        public TVs(int size, int ports, decimal price, bool mountable)
+        public abstract void TVType(int Size, int Ports, decimal Price, bool IsMountable);
+        
+        public TVs(int Size, int Ports, decimal Price, bool IsMountable)
         {
-            this.size = size;
-            this.ports = ports;
-            this.price = price;
-            this.mountable = mountable;
+            
         }
 
-        public TVs(int size, int ports) :this(size, ports, 599.99m, true)
-        {
 
-        }
 
 
 
