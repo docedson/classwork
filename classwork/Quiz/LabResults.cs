@@ -1,5 +1,6 @@
 using System;
 
+
 namespace Quiz
 
 {
@@ -87,8 +88,6 @@ namespace Quiz
                 Console.WriteLine("For this model, your TV will operate using the authorized Smart App.");
                 Console.WriteLine(" ");
 
-
-
             }
 
             else
@@ -161,65 +160,33 @@ namespace Quiz
         public void Problem6()
         {
             double dogWeight;
-            double dogYear1, dogYear2, dogYear3, Puppies;
 
-            Console.WriteLine("To figure out your dog's age compared to a human's age, please enter your dog's weight and press 'Enter' first.");
+            SmallDog mySmall = new SmallDog();
+            MedDog myMed = new MedDog();
+            LargeDog myLarge = new LargeDog();
+
+            Console.WriteLine("To figure out your dog's age compared to a human's age, please enter your dog's weight and press 'Enter'.");
             dogWeight = double.Parse(Console.ReadLine());
             Console.WriteLine("");
-
-
-            if (dogWeight <= 20)
+                
             {
-                Console.WriteLine("Your dog is considered a 'small' dog. Now, please enter your dog's age by whole year.");
-                dogYear1 = double.Parse(Console.ReadLine());
-                if (dogYear1 <= 5)
+                if (dogWeight <= 20)
                 {
-                    return dogAge;
+                    mySmall.ageList();
+                    mySmall.dogYears();
                 }
-
-                else
+                else if (dogWeight >= 21 && dogWeight <= 49)
                 {
-                    return _Small;
+                    myMed.ageList();
+                    myMed.dogYears();
+                }
+                else if (dogWeight >= 50)
+                {
+                    myLarge.ageList();
+                    myLarge.dogYears();
                 }
 
             }
-
-            else if (dogWeight >= 20 && dogWeight <= 50)
-            {
-                Console.WriteLine("Your dog is considered a 'medium' dog. Now, please enter your dog's age by whole year.");
-                dogYear2 = double.Parse(Console.ReadLine());
-                if (dogYear2 <= 5)
-                {
-                    return _dogAge;
-                }
-
-                else
-                {
-                    return _Medium;
-                }
-            }
-
-            else if (dogWeight >= 50)
-            {
-                Console.WriteLine("Your dog is considered a 'large' dog. Now, please enter your dog's age by whole year.");
-                dogYear3 = double.Parse(Console.ReadLine());
-                if (dogYear3 <= 5)
-                {
-                    return _dogAge;
-                }
-
-                else
-                {
-                    return _Large;
-                }
-            }
-
-            
-
         }
-
-
-
-
-    }       
+    }
 }
