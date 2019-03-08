@@ -12,6 +12,7 @@ namespace Quiz
         {
             Console.WriteLine("Your dog is considered a 'medium' dog. Now, please enter your dog's age by whole years and press 'Enter'.");
             howOld = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
         }
 
         public void dogYears()

@@ -4,19 +4,14 @@ using System.Text;
 
 namespace Quiz
 {
-    public class FKTV : TVs
+    public class FKTV : TVsAll
     {
-        int Size;
-        int Ports;
-        decimal Price;
-        bool IsMountable = true;
-
-        public FKTV(int Size, int Price) : base(Size, Price)
+        public FKTV(int size, int ports, decimal price, bool isMountable) : base(size, ports, price, isMountable)
         {
-            Console.WriteLine("The size is " + Size, "inches. The number of ports is ", +Ports, ". The price is $", +Price, ". This TV is ", Mountable, ". Your 4K TV will be operated by the authorized Smart App.");
+            Console.WriteLine("The size of your 4K TV is " + size + "inches.");
+            Console.WriteLine("Your price today is $" + price +".");
+            Console.WriteLine("The number of ports you will have available is " + ports + ".");
+            Console.WriteLine("Your 4K TV will be operated by the authorized Smart App.");                
         }
-
-
-
     }
 }*/

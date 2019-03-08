@@ -12,6 +12,7 @@ namespace Quiz
         {
             Console.WriteLine("Your dog is considered a 'small' dog. Now, please enter your dog's age by whole years and press 'Enter'.");
             howOld = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
         }
 
         public void dogYears()
@@ -82,7 +83,7 @@ namespace Quiz
             }
             else
             {
-                Console.WriteLine("Your dog is over 80 human years old. Time to take them on the trip of their lifetime!");
+                Console.WriteLine("Your dog is over 80 human years old. It's time to let them eat all the chocolate they want!");
             }
             Console.ReadLine();
         }

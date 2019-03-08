@@ -59,11 +59,6 @@ namespace Quiz
 
         public void Problem2()
         {
-            int Size;
-            int Ports;
-            decimal Price;
-            bool IsMountable;
-
             Console.WriteLine("Which TV are you considering? Please enter '1' for the HDTV, and '2' for the 4K TV. Then press 'Enter'");
             int myTV = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" ");
@@ -72,7 +67,7 @@ namespace Quiz
             {
                 Console.WriteLine("You have chosen the HDTV model. With this model, the specs are: ");
                 Console.WriteLine(" ");
-                //Console.WriteLine(TVTypes);
+                
                 Console.WriteLine("For this model, your TV will require you to operate it using the included remote.");
                 Console.WriteLine(" ");
                 
