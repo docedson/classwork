@@ -1,6 +1,7 @@
 ﻿using System;
 using Lessons;
 using Quiz;
+using Advanced;
 
 //This namespace represents the file folder that the class is in.
 namespace classwork
@@ -8,6 +9,8 @@ namespace classwork
     // Class is a blueprint of an object.
     class Program
     {
+        public delegate void TryOn(string type);
+
         /*static is only one, void is a return type, Main is the method name, string[] is an array and a parameter */
         static void Main(string[] args)
         {
@@ -33,8 +36,33 @@ namespace classwork
             //AnotherHouseExample();
             //GenericSample();
             //CollectionSample();
-            LabResults();    
-            
+            //LabResults();
+            //DelegateSample();            
+            MultiDelegateSample();
+        }
+
+        private static void MultiDelegateSample()
+        {
+            Hats moreHats = new Hats(7);
+            TryOn someHats, niceHat, sadHat; //these are 3 objects of the delegate TryOn
+
+            niceHat = moreHats.FindLuckyHat;
+            niceHat("Top");
+
+            sadHat = moreHats.FindUglyHat;
+            sadHat("Dunce");
+
+            someHats = niceHat + sadHat;
+            someHats("Cowboy");
+        }
+
+        private static void DelegateSample()
+        {
+            Hats myHat = new Hats("Cowboy", 7);
+            TryOn theHat = myHat.TryOnHat;
+            theHat("I tried on a " + myHat.HatType + " hat that was my size " + myHat.HatSize);
+
+            Hats mySecondHat = new Hats();
         }
 
         static void LabResults()
@@ -45,10 +73,8 @@ namespace classwork
             //myLab2.Problem3();
             //myLab2.Problem4();
             //myLab2.Problem5();
-            myLab2.Problem6();
+            //myLab2.Problem6();
         }
-
-
 
         static void CollectionSample()
         {
