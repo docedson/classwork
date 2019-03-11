@@ -7,6 +7,7 @@ namespace Quiz
     class MedDog
     {
         int howOld;
+        int peopleOld;
 
         public void ageList()
         {
@@ -19,73 +20,55 @@ namespace Quiz
         {
             if (howOld == 1)
             {
-                Console.WriteLine("Your dog is 15 years old in human years.");
+                peopleOld = ((howOld - 1) * 4) + 15;
+                Console.WriteLine("Your dog is " +peopleOld +" years old in human years.");
             }
-            else if (howOld == 2)
-            {
-                Console.WriteLine("Your dog is 24 years old in human years.");
+
+            else if (howOld >= 2 && howOld <= 5)
+            {                
+                peopleOld = ((howOld - 1) * 4) + 20;
+                Console.WriteLine("Your dog is " +peopleOld +" years old in human years.");
             }
-            else if (howOld == 3)
-            {
-                Console.WriteLine("Your dog is 28 years old in human years.");
-            }
-            else if (howOld == 4)
-            {
-                Console.WriteLine("Your dog is 32 years old in human years.");
-            }
-            else if (howOld == 5)
-            {
-                Console.WriteLine("Your dog is 36 years old in human years.");
-            }
+
             else if (howOld == 6)
-            {
-                Console.WriteLine("Your dog is 42 years old in human years.");
+            {                
+                peopleOld = ((howOld - 1) * 4) + 22;
+                Console.WriteLine("Your dog is " +peopleOld +" years old in human years.");                
             }
-            else if (howOld == 7)
-            {
-                Console.WriteLine("Your dog is 47 years old in human years.");
+
+            else if (howOld == 7 || howOld == 8)
+            {                
+                peopleOld = ((howOld - 1) * 4) + 23;
+                Console.WriteLine("Your dog is " + peopleOld + " years old in human years.");
             }
-            else if (howOld == 8)
+
+            else if (howOld == 9 || howOld == 10)
             {
-                Console.WriteLine("Your dog is 51 years old in human years.");
+                peopleOld = ((howOld - 1) * 4) + 24;
+                Console.WriteLine("Your dog is " + peopleOld + " years old in human years.");
             }
-            else if (howOld == 9)
+
+            else if (howOld == 11 || howOld == 12)
             {
-                Console.WriteLine("Your dog is 56 years old in human years.");
+                peopleOld = ((howOld - 1) * 4) + 25;
+                Console.WriteLine("Your dog is " + peopleOld + " years old in human years.");
             }
-            else if (howOld == 10)
-            {
-                Console.WriteLine("Your dog is 60 years old in human years.");
+
+            else if (howOld == 13 || howOld == 14)
+            {                
+                peopleOld = ((howOld - 1) * 4) + 26;
+                Console.WriteLine("Your dog is " + peopleOld + " years old in human years.");
             }
-            else if (howOld == 11)
+
+            else if (howOld == 15 || howOld == 16)
             {
-                Console.WriteLine("Your dog is 65 years old in human years.");
-            }
-            else if (howOld == 12)
-            {
-                Console.WriteLine("Your dog is 69 years old in human years.");
-            }
-            else if (howOld == 13)
-            {
-                Console.WriteLine("Your dog is 74 years old in human years.");
-            }
-            else if (howOld == 14)
-            {
-                Console.WriteLine("Your dog is 78 years old in human years.");
-            }
-            else if (howOld == 15)
-            {
-                Console.WriteLine("Your dog is 83 years old in human years.");
-            }
-            else if (howOld == 16)
-            {
-                Console.WriteLine("Your dog is 87 years old in human years.");
+                peopleOld = ((howOld - 1) * 4) + 27;
+                Console.WriteLine("Your dog is " + peopleOld + " years old in human years.");
             }
             else
             {
-                Console.WriteLine("Your dog is over 87 human years old. Maybe it's time for you to let your doggy go to the farm and run free.");
+                Console.WriteLine("Your dog is over 87 human years old. It's time for you to take your doggy on the trip of his lifetime.");
             }
-            Console.ReadLine();
         }
     }
 }

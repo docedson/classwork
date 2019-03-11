@@ -36,9 +36,9 @@ namespace classwork
             //AnotherHouseExample();
             //GenericSample();
             //CollectionSample();
-            //LabResults();
+            LabResults();
             //DelegateSample();            
-            MultiDelegateSample();
+            //MultiDelegateSample();
         }
 
         private static void MultiDelegateSample()
@@ -73,7 +73,7 @@ namespace classwork
             //myLab2.Problem3();
             //myLab2.Problem4();
             //myLab2.Problem5();
-            //myLab2.Problem6();
+            myLab2.Problem6();
         }
 
         static void CollectionSample()
