@@ -1,17 +1,26 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Quiz
 {
-    public class FKTV : TVsAll
+    public class FKTV : TVsData
     {
-        public FKTV(int size, int ports, decimal price, bool isMountable) : base(size, ports, price, isMountable)
+        public int ports = 5;
+        public FKTV(string size, string price) : base(size, price)
         {
-            Console.WriteLine("The size of your 4K TV is " + size + "inches.");
-            Console.WriteLine("Your price today is $" + price +".");
-            Console.WriteLine("The number of ports you will have available is " + ports + ".");
-            Console.WriteLine("Your 4K TV will be operated by the authorized Smart App.");                
+            Console.WriteLine("The size of your 4K TV is " +size +", and the price of this model is $" +price);            
         }
+
+        public override void SmartApp()
+        {
+            Console.WriteLine("As being the newest tech, you get to use the authorized Smart App to operate your TV!");
+        }
+
+        public override void TurnOn()
+        {
+            Console.WriteLine("There is no physical remote provided for this TV model.");
+        }
+
     }
-}*/
+}

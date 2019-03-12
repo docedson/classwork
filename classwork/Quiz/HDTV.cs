@@ -1,17 +1,25 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Quiz
 {
-    public class HDTV : TVsPart
+    public class HDTV : TVsData
     {
-        public HDTV(int size, int ports, decimal price, bool isMountable) : base(size, ports)
+        public int ports = 3;
+        public HDTV(string size, string price) : base(size, price)
         {
-            Console.WriteLine("The size of your HDTV is " + size + "inches.");
-            Console.WriteLine("Your price today is $" + price + ".");
-            Console.WriteLine("The number of ports you will have available is " + ports + ".");
-            Console.WriteLine("Your HDTV will be operated by the provided remote control.");
+            Console.WriteLine("The size of your HDTV is " + size + ", and the price of this model is $" +price +".");
+        }
+
+        public override void SmartApp()
+        {
+            Console.WriteLine("The Smart App option is not available for this model. Perhaps you should consider upgrading to the 4K TV!");
+        }
+
+        public override void TurnOn()
+        {
+            Console.WriteLine("For this model, you must use the provided remote to operate your TV.");
         }
     }
-}*/
+}

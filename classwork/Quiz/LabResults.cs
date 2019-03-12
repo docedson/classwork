@@ -1,4 +1,5 @@
 using System;
+using ExtraStruct5;
 
 
 namespace Quiz
@@ -8,6 +9,8 @@ namespace Quiz
 
     
     {
+        public string ports { get; private set; }
+
         public void Problem1()
         {
             Console.WriteLine("What would you like to determine today? Please enter 'V' for voltage, 'I' for current, or 'R' for resistance. Then press 'Enter'");
@@ -66,30 +69,29 @@ namespace Quiz
             if (myTV == 1)
             {
                 Console.WriteLine("You have chosen the HDTV model. With this model, the specs are: ");
-                Console.WriteLine(" ");
-                
-                Console.WriteLine("For this model, your TV will require you to operate it using the included remote.");
-                Console.WriteLine(" ");
-                
-
-
+                Console.WriteLine("----------------------------------------------------------------");
+                HDTV myHD = new HDTV("80 inches", "900.00");
+                myHD.Mounty(false);
+                myHD.TurnOn();
+                myHD.SmartApp();
+                Console.WriteLine("However, this model does have " + myHD.ports + " ports available for your needs.");
             }
 
             else if (myTV == 2)
             {
-                Console.WriteLine("You have chosen the 4KTV model. With this model, the specs are: ");
-                Console.WriteLine(" ");
-
-                Console.WriteLine("For this model, your TV will operate using the authorized Smart App.");
-                Console.WriteLine(" ");
-
+                Console.WriteLine("You have chosen the 4K TV model. With this model, the specs are: ");
+                Console.WriteLine("----------------------------------------------------------------");
+                FKTV myFK = new FKTV("100 inches", "3000.00");
+                myFK.Mounty(true);
+                myFK.TurnOn();
+                myFK.SmartApp();
+                Console.WriteLine("This model has " + myFK.ports + " ports available for your needs.");
             }
 
             else
             {
                 Console.WriteLine("You did not enter a valid option. Please start over.");
             }
-
         }
 
         public void Problem3()
@@ -136,21 +138,22 @@ namespace Quiz
                 }
 
             }
-            Console.Read();            
-
+            Console.Read();
         }
 
-        /*public void Problem5()
+        public void Problem5()
         {
+            moreTV myMore = new moreTV();
+            myMore.price = "$2000.00";
+            myMore.size = "75 inches";
+            myMore.ports = 5;
+            myMore.isMountable = true;
 
-
-
-
-
-       
-
-
-        }*/
+            Console.WriteLine("The price of this 4K TV is {0}.", myMore.price);
+            Console.WriteLine("It is {0} wide.", myMore.size);
+            Console.WriteLine("You will get {0} available ports.", myMore.ports);
+            Console.WriteLine("Also, this TV mountability is {0}.", myMore.isMountable);
+        }
 
         public void Problem6()
         {
