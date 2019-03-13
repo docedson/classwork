@@ -3,10 +3,8 @@ using ExtraStruct5;
 
 
 namespace Quiz
-
 {
     public class LabResults
-
     
     {
         public string ports { get; private set; }
@@ -56,8 +54,6 @@ namespace Quiz
             {
                 Console.WriteLine("You did not enter a valid option. Please start over.");
             }
-
-
         }
 
         public void Problem2()
@@ -85,7 +81,7 @@ namespace Quiz
                 myFK.Mounty(true);
                 myFK.TurnOn();
                 myFK.SmartApp();
-                Console.WriteLine("This model has " + myFK.ports + " ports available for your needs.");
+                Console.WriteLine("Finally, this model has " + myFK.ports + " ports available for your needs.");
             }
 
             else
@@ -110,8 +106,6 @@ namespace Quiz
             myLengths.ConversionFeet(feet, LengthConversion.Measurements.Inches);
             myLengths.ConversionFeet(feet, LengthConversion.Measurements.Meters);
             myLengths.ConversionFeet(feet, LengthConversion.Measurements.Yards);
-
-
         }
 
         public void Problem4()
@@ -136,23 +130,37 @@ namespace Quiz
                 {
                     Console.WriteLine("Your chosen year is not a Leap Year. Please press 'Enter' to continue.");
                 }
-
             }
             Console.Read();
         }
 
         public void Problem5()
         {
-            moreTV myMore = new moreTV();
-            myMore.price = "$2000.00";
-            myMore.size = "75 inches";
-            myMore.ports = 5;
-            myMore.isMountable = true;
+            moreTV HD;
+            moreTV FK;
 
-            Console.WriteLine("The price of this 4K TV is {0}.", myMore.price);
-            Console.WriteLine("It is {0} wide.", myMore.size);
-            Console.WriteLine("You will get {0} available ports.", myMore.ports);
-            Console.WriteLine("Also, this TV mountability is {0}.", myMore.isMountable);
+            //moreTV myMore = new moreTV();
+            HD.price = "$2000.00";
+            HD.size = "75 inches";
+            HD.ports = 2;
+            HD.isMountable = false;            
+
+            Console.WriteLine("The price of this HD TV is {0}.", HD.price);
+            Console.WriteLine("It is {0} wide.", HD.size);
+            Console.WriteLine("You will get {0} available ports.", HD.ports);
+            Console.WriteLine("Also, it is {0} that this TV is mountable.", HD.isMountable);
+            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine(" ");
+
+            FK.price = "$4500.00";
+            FK.size = "95 inces";
+            FK.ports = 5;
+            FK.isMountable = true;
+
+            Console.WriteLine("The price of this 4K TV is {0}.", FK.price);
+            Console.WriteLine("It is {0} wide.", FK.size);
+            Console.WriteLine("You will get {0} available ports.", FK.ports);
+            Console.WriteLine("Also, it is {0} that this TV is mountable.", FK.isMountable);
         }
 
         public void Problem6()

@@ -39,6 +39,14 @@ namespace classwork
             LabResults();
             //DelegateSample();            
             //MultiDelegateSample();
+            //EventSample();
+        }
+
+        private static void EventSample()
+        {
+            Coats myCoat = new Coats();
+            string result = myCoat.MyResult;
+            Console.WriteLine(result);
         }
 
         private static void MultiDelegateSample()
@@ -69,10 +77,10 @@ namespace classwork
         {
             LabResults myLab2 = new LabResults();
             //myLab2.Problem1();
-            //myLab2.Problem2();
+            myLab2.Problem2();
             //myLab2.Problem3();
             //myLab2.Problem4();
-            myLab2.Problem5();
+            //myLab2.Problem5();
             //myLab2.Problem6();
         }
 

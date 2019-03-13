@@ -19,7 +19,7 @@ namespace Quiz
 
         public override void TurnOn()
         {
-            Console.WriteLine("For this model, you must use the provided remote to operate your TV.");
+            Console.WriteLine("For this TV, you must use the provided remote for operations.");
         }
     }
 }
