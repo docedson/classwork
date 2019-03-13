@@ -36,11 +36,18 @@ namespace classwork
             //AnotherHouseExample();
             //GenericSample();
             //CollectionSample();
-            LabResults();
+            //LabResults();
             //DelegateSample();            
             //MultiDelegateSample();
             //EventSample();
+            LambdaSample();
         }
+
+        private static void LambdaSample()
+        {
+            LambdaExample myLambda = new LambdaExample();
+            Console.WriteLine(myLambda.MyLambdaOne(5));
+        }   
 
         private static void EventSample()
         {
