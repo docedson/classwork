@@ -40,7 +40,15 @@ namespace classwork
             //DelegateSample();            
             //MultiDelegateSample();
             //EventSample();
-            LambdaSample();
+            //LambdaSample();
+            MyExceptionSample();            
+        }
+
+        private static void MyExceptionSample()
+        {
+            ExceptionExamples myEx = new ExceptionExamples();
+            //myEx.MyExcemtpion();
+            myEx.MyArrayException();
         }
 
         private static void LambdaSample()
@@ -84,10 +92,10 @@ namespace classwork
         {
             LabResults myLab2 = new LabResults();
             //myLab2.Problem1();
-            myLab2.Problem2();
+            //myLab2.Problem2();
             //myLab2.Problem3();
             //myLab2.Problem4();
-            //myLab2.Problem5();
+            myLab2.Problem5();
             //myLab2.Problem6();
         }
 
